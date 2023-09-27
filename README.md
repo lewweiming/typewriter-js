@@ -15,4 +15,6 @@ typeWriter.type('.response', 'Hello World!', 100); // Function params: selector,
 
 ## CDN
 
-> To be developed via https://www.jsdelivr.com
+```
+<script src="https://cdn.jsdelivr.net/gh/lewweiming/typewriter-js@main/typewriter.js"></script>
+```
