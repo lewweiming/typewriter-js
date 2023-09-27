@@ -9,6 +9,9 @@
   <!-- CUSTOM THEMES -->
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- JS TYPEWRITER -->
+  <script src="https://cdn.jsdelivr.net/gh/lewweiming/typewriter-js@main/typewriter.js"></script>
+
   <!-- ADDITIONAL STYLES -->
 
 </head>
@@ -37,12 +40,20 @@
           <div class="mb-6">
           <input type="text" placeholder="Type your sentence here" class="input input-bordered w-full max-w-xs" />
           </div>
-          <button @click="" class="btn btn-primary">Type It</button>
+          <button @click="type" class="btn btn-primary">Type It</button>
         </div>
       </div>
     </div>
 
     <!-- ADDITIONAL SCRIPTS -->
+  <script>
+    const typeWriter = new TypeWriter()
+
+    function type() {
+      let input = document.querySelector('input').value
+      typeWriter.type('.response', input, 10);
+    }
+  </script>
    
 </body>
 
